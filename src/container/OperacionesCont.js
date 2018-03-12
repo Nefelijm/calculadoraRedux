@@ -1,6 +1,6 @@
-// import {connect} from 'react-redux'
-// import {Mostrar as MostrarCreator} from '../actions'
-// import Operations from '../components/Operations'
+import {connect} from 'react-redux'
+import Mostrar from '../actions'
+import Operations from '../components/Operations'
 
 // const OperacionesCont = connect(
 //     null,
@@ -18,3 +18,23 @@
 //          numero: state.number,
 //     }
 //   }
+
+const coneccion = connect(
+    function mapStateToProps(state){
+        operation:state.operation;
+        // const {
+        //     operation 
+        // } = state.operation;
+
+        // return 
+    },
+
+    function mapDispatchToProps(dispatch){
+        return {
+            mandar(numero) {
+                dispatch(mostrar(numero))
+            }
+        }
+    }
+)(Operations);
+export default coneccion;
