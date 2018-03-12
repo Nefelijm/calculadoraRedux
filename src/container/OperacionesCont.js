@@ -1,13 +1,12 @@
 import {connect} from 'react-redux'
 import {Mostrar as MostrarCreator} from '../actions'
-
-import Operaciones from '../components/Operaciones'
+import Operations from '../components/Operations'
 
 const OperacionesCont = connect(
     null,
     dispatch => ({
         Mostrar : nro => dispatch(MostrarCreator(nro))
     })
-)(Operaciones)
+)(Operations)
 
 export default OperacionesCont
