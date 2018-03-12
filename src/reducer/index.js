@@ -1,3 +1,4 @@
+import {actionTypes} from '../actions'
 const initialState = {
     operation: 0,
     register: "",
@@ -5,8 +6,8 @@ const initialState = {
 
 const reducer = (state= initialState, action) => {
     switch (action.type){
-        case 'MOSTRAR' : {
-          return Object.assign({},state,{operation:action.payload})
+        case actionTypes.MOSTRAR : {
+          return Object.assign({},state,{operation:action.text})
         }
     }
 }

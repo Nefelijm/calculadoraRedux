@@ -1,5 +1,8 @@
-import {createStore} from 'redux';
-import Reducer from './reducer/index.js'
+import {createStore,combineReducers} from 'redux';
+import AppReducer from './reducer/index.js'
 
-const store = createStore(Reducer);
+const rootReducer = combineReducers({
+    AppReducer
+})
+const store = createStore(rootReducer);
 export default store;

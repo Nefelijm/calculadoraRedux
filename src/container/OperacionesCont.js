@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import Mostrar from '../actions'
+import {mostrar} from '../actions'
 import Operations from '../components/Operations'
 
 // const OperacionesCont = connect(
@@ -21,18 +21,18 @@ import Operations from '../components/Operations'
 
 const coneccion = connect(
     function mapStateToProps(state){
-        operation:state.operation;
-        // const {
-        //     operation 
-        // } = state.operation;
+        // operation:state.operation;
+        const {
+            operation 
+        } = state.AppReducer;
 
-        // return 
+        return {operation}
     },
 
     function mapDispatchToProps(dispatch){
         return {
             mandar(numero) {
-                dispatch(mostrar(numero))
+                dispatch(mostrar(numero));
             }
         }
     }

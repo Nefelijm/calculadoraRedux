@@ -2,7 +2,7 @@ import React from 'react'
 import Historial from './Historial'
 import Screen from './Screen'
 import Numbers from './Numbers'
-import Operations from './Operations'
+import Operations from '../container/OperacionesCont.js'
 import Equal from './Equal'
 import './App.css';
 import { Provider } from 'react-redux';
