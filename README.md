@@ -19,3 +19,8 @@ Realizar una calculadora utilizando React y Redux.
 * HTML5.
 * Node.js
 
+### Integrantes:
+
+* Nelida Quispe Tacuri
+* Nefeli Joñoruco Morales
+* Elena Japa
