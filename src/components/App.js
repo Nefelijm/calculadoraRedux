@@ -5,8 +5,11 @@ import Numbers from './Numbers'
 import Operations from './Operations'
 import Equal from './Equal'
 import './App.css';
+import { Provider } from 'react-redux';
+import store from '../store.js'
 
 const App = () => (
+  <Provider store ={store}>
   <div className="container">
     <div className="row">
       <Historial/>
@@ -16,10 +19,7 @@ const App = () => (
           <div className="panel-body">
             <div className="col-xs-12" style={{marginBottom: '10px'}}>
               <div className="row">
-                <Screen/>
-                <Numbers />
                 <Operations />
-                <Equal />
                 {/* <button className="btn-lg btn-block btn btn-default" type="button">Clear</button> */}
               </div>
             </div>
@@ -28,6 +28,7 @@ const App = () => (
       </div>
     </div>
   </div>
+ </Provider> 
 )
 
 export default App
